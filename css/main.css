@@ -40,6 +40,12 @@ main.container {
   margin-top: 43px;
 }
 
+.nav-pc {
+  position: fixed;
+  width: 300px;
+  overflow: auto;
+}
+
 /* Navbar */
 .navbar {
   flex-basis: 300px;
@@ -48,6 +54,8 @@ main.container {
   height: 100vh;
   overflow-y: auto;
 }
+
+
 
 .nav-list-heading {
   padding: 0.01rem 16px;
@@ -368,6 +376,11 @@ main.container {
   .nav-menu {
     display: block;
   }
+  
+  #showMenu {
+    display: none;
+    transition: all .3s ease;
+  }
 
   .navbar {
     position: absolute;
@@ -375,15 +388,11 @@ main.container {
     left: 0;
     background-color: #fff;
     width: 300px;
-    /* transform: translateX(-100%); */
-  }
-
-  #showMenu {
-    display: none;
   }
 
   .nav-close {
     display: block;
+    cursor: pointer;
   }
 }
 

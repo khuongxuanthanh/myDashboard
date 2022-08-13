@@ -19,7 +19,7 @@
   <body>
     <nav class="nav">
       <div class="nav-menu">
-        <button onclick="myFunction()">
+        <button onclick="showNavbar();" id="btn-menu">
           <i class="fa fa-bars"></i>
           &nbsp;Menu
         </button>
@@ -30,90 +30,92 @@
     </nav>
     <main class="container">
       <navbar class="navbar" id="showMenu">
-        <div class="user">
-          <div class="user-img">
-            <img src="./img/avatar2.png" alt="" />
-          </div>
-          <div class="user-info">
-            <span>Welcome, <strong>Mike</strong></span>
-            <div class="user-title">
-              <a href="">
-                <i class="fa fa-envelope"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-user"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-cog"></i>
-              </a>
+        <div class="nav-pc">
+          <div class="user">
+            <div class="user-img">
+              <img src="./img/avatar2.png" alt="" />
+            </div>
+            <div class="user-info">
+              <span>Welcome, <strong>Mike</strong></span>
+              <div class="user-title">
+                <a href="">
+                  <i class="fa fa-envelope"></i>
+                </a>
+                <a href="">
+                  <i class="fa fa-user"></i>
+                </a>
+                <a href="">
+                  <i class="fa fa-cog"></i>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-        <hr />
-        <div class="nav-list">
-          <div class="nav-list-heading">
-            <h5>Dashboard</h5>
+          <hr />
+          <div class="nav-list">
+            <div class="nav-list-heading">
+              <h5>Dashboard</h5>
+            </div>
+            <div class="nav-close" onclick="closeNavbar()">
+              <i class="fa fa-remove fa-fw"></i>
+              &nbsp;Close Menu
+            </div>
+            <ul>
+              <li class="nav-list-item">
+                <a href="">
+                  <i class="fa fa-users fa-fw"></i>
+                  &nbsp;Overview</a
+                >
+              </li>
+              <li class="nav-list-item">
+                <a href="">
+                  <i class="fa fa-eye fa-fw"></i>
+                  &nbsp;Views</a
+                >
+              </li>
+              <li class="nav-list-item">
+                <a href="">
+                  <i class="fa fa-users fa-fw"></i>
+                  &nbsp;Traffic</a
+                >
+              </li>
+              <li class="nav-list-item">
+                <a href="">
+                  <i class="fa fa-bullseye fa-fw"></i>
+                  &nbsp;Geo</a
+                >
+              </li>
+              <li class="nav-list-item">
+                <a href="">
+                  <i class="fa fa-diamond fa-fw"></i>
+                  &nbsp;Orders</a
+                >
+              </li>
+              <li class="nav-list-item">
+                <a href="">
+                  <i class="fa fa-bell fa-fw"></i>
+                  &nbsp;News</a
+                >
+              </li>
+              <li class="nav-list-item">
+                <a href="">
+                  <i class="fa fa-bank fa-fw"></i>
+                  &nbsp;General</a
+                >
+              </li>
+              <li class="nav-list-item">
+                <a href="">
+                  <i class="fa fa-history fa-fw"></i>
+                  &nbsp;History</a
+                >
+              </li>
+              <li class="nav-list-item">
+                <a href="">
+                  <i class="fa fa-cog fa-fw"></i>
+                  &nbsp;Settings</a
+                >
+              </li>
+            </ul>
           </div>
-          <div class="nav-close">
-            <i class="fa fa-remove fa-fw"></i>
-            &nbsp;Close Menu
-          </div>
-          <ul>
-            <li class="nav-list-item">
-              <a href="">
-                <i class="fa fa-users fa-fw"></i>
-                &nbsp;Overview</a
-              >
-            </li>
-            <li class="nav-list-item">
-              <a href="">
-                <i class="fa fa-eye fa-fw"></i>
-                &nbsp;Views</a
-              >
-            </li>
-            <li class="nav-list-item">
-              <a href="">
-                <i class="fa fa-users fa-fw"></i>
-                &nbsp;Traffic</a
-              >
-            </li>
-            <li class="nav-list-item">
-              <a href="">
-                <i class="fa fa-bullseye fa-fw"></i>
-                &nbsp;Geo</a
-              >
-            </li>
-            <li class="nav-list-item">
-              <a href="">
-                <i class="fa fa-diamond fa-fw"></i>
-                &nbsp;Orders</a
-              >
-            </li>
-            <li class="nav-list-item">
-              <a href="">
-                <i class="fa fa-bell fa-fw"></i>
-                &nbsp;News</a
-              >
-            </li>
-            <li class="nav-list-item">
-              <a href="">
-                <i class="fa fa-bank fa-fw"></i>
-                &nbsp;General</a
-              >
-            </li>
-            <li class="nav-list-item">
-              <a href="">
-                <i class="fa fa-history fa-fw"></i>
-                &nbsp;History</a
-              >
-            </li>
-            <li class="nav-list-item">
-              <a href="">
-                <i class="fa fa-cog fa-fw"></i>
-                &nbsp;Settings</a
-              >
-            </li>
-          </ul>
         </div>
       </navbar>
       <div class="contact">
@@ -353,15 +355,6 @@
       </div>
     </main>
 
-    <script>
-      function myFunction() {
-        var x = document.getElementsById("showMenu");
-        if (x.style.display === "none") {
-          x.style.display = "block";
-        } else {
-          x.style.display = "none";
-        }
-      }
-    </script>
+    <script language="javascript" src="./main.js"></script>
   </body>
 </html>
